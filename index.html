@@ -21,7 +21,6 @@
         display: flex;
         margin: auto;
         margin-right: 20px;
-        /* border: 1px solid red; */
         margin-left: 320px;
     }
     img{
@@ -39,10 +38,9 @@
         text-align: center;
         padding: 10px 0px 10px 0px;
         background-color: #e2eff7;
-       ;
         font-size: 13px;
     }
-    .sin{
+    .dropdown{
         border-left: 1px solid #f5f7f8;
         border-right: 1px solid #f5f7f8;
         margin-left: -15px;
@@ -50,11 +48,11 @@
         text-align: center;
         height: 150px;
     }
-    .sin>p{
+    .dropdown>p{
         color: #6c87a3;
-       ;
         font-size: 13px;
         margin-top: 70px;
+        margin-left: 33px;
     }
     .right{
         margin-left: 10px;
@@ -67,9 +65,12 @@
         width: 25px;
         margin-left: -20px;
     }
-    .sin>h6{
+    .dropdown>button{
         margin-top:8px;
         margin-left: 70px;
+        border: 0;
+        background-color: white;
+        font-weight: bold;
     }
     #cont1{
         background: rgb(81,197,221);
@@ -109,26 +110,223 @@
         background: rgb(24,53,59);
         background: linear-gradient(90deg, rgba(24,53,59,1) 0%, rgba(0,0,0,1) 0%, rgba(26,60,60,1) 92%);
     }
+    .dropdown {
+     position: relative;
+     display: inline-block;
+    }
 
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 41px;
+    padding-bottom: 14px;
+    background-color: #212432;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
 
+    .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin-top: 20px;
+    }
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+    h5{
+        font-size: 17px;
+        width: 230px;
+        margin-left: 20px;
+    }
+    .dropdown a+a{
+        font-size: 14px;
+        width: 200px;
+        color: #CED1DB;
+        line-height: 23px;
+        vertical-align: baseline;
+        letter-spacing: normal;
+        word-spacing: 0px;
+        margin-left: 35px;
+        font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        padding: 0px 0px 24px;
+
+    }
+    .join{
+        background-color: #4296cc;
+        border: 0px;
+        margin-left: 6px;
+        padding: 12px 80px 12px 80px;
+        color: white;
+        border-radius: 5px;
+        margin-bottom: -10px;
+    }
+    .join:hover{
+        cursor: pointer;
+        background-color: #2371a2;
+    }
+    .sign{
+        background-color: #212432;
+        border: 1px solid skyblue;
+        margin-left: 8px;
+        padding: 11px 68px 11px 68px;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        width: 190px;
+    }
+    .sign:hover{
+        cursor: pointer;
+        background-color: #4296cc;
+    }
+    #cont2{
+        text-align: center;
+        background-color: #f5e7f6;
+        width: 99%;
+        margin: 10px auto;
+        height: 550px;
+        padding-top: 40px;
+    }
+    #cont2 h2{
+        font-size: 40px;
+        font-weight: 400;  
+    }
+    #cont2> div{
+        margin-top: 50px;
+    }
+    #cont2> div p{
+        width: 375px;
+        margin: auto;
+        line-height:25.6px;
+        margin-top: 20px;
+    }
+    #cont2>div button{
+        border: 0px;
+        padding: 20px;
+        width: 170px;
+        border-radius: 5px;
+        background-color: #212433;
+        color: white;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    #cont2 div button:hover{
+        cursor: pointer;
+        background: rgb(24,53,59);
+        background: linear-gradient(90deg, rgba(24,53,59,1) 0%, rgba(0,0,0,1) 0%, rgba(26,60,60,1) 92%);
+    }
+    #cont2>div img{
+        width: 750px;
+        margin-top: -50px;
+        margin-left: 30px;
+    }
+    #cont3{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #cont3 div{
+        text-align: center;
+        margin: auto;
+        width: 940px;
+        height: 546px;
+        margin-bottom: 20px;
+    }
+    #cont3 div h2{
+        font-size: 40px;
+        font-weight: 400; 
+        margin-top: 50px;
+    }
+    #cont3> div p{
+        width: 410px;
+        font-size: 17px;
+        font-weight: 400;
+        color: #4E5262;
+        margin: auto;
+        line-height:25.6px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    #cont3>div img{
+        width: 650px;
+        margin-top: 25px;
+        margin-left: 30px;
+    }
+    #cont3> div p+a{
+        text-decoration: none;
+        color: #4296cc;
+        font-size: 17px;
+    }
+    #cont3> div p+a:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    #cont4{
+        margin: auto;
+        background-color: #f0fbff;
+        width: 99%;
+    }
+    #cont4 div{
+        text-align: center;
+        margin: auto;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    #cont4 div h2{
+        font-size: 40px;
+        font-weight: 400;
+        margin-top: 50px;
+    }
+    #cont4> div p{
+        width: 410px;
+        font-size: 17px;
+        font-weight: 400;
+        color: #4E5262;
+        margin: auto;
+        line-height:25.6px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    #cont4>div img{
+        width: 100%;
+        margin-top: 25px;
+    }
+    #cont4> div a{
+        text-decoration: none;
+        color: #4296cc;
+        font-size: 17px;
+    }
+    #cont4> div a:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+   
 
 </style>
 <body>
-    <!-- <p class="top">NEW: <span style="color: #98cbe3 ;">FB Strong Runner:</span> 2-Week Strength-Focused Challenge</p> -->
+    <!-- <p class="top">NEW: <span style="color: #2ab6c5 ;">FB Strong Runner:</span> 2-Week Strength-Focused Challenge</p> -->
     <div id="navbars">
         <div class="left">
             <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBhUTBxMVFRUVGCEaFxcYGRgZGRcaHhYZHSAeIR0YIyggGx4mHxohIjEhJSkrLjowIyAzOD8sOCgtLy0BCgoKDg0OGxAQGy4iHyYwLzcrLSstLSs1Ky0tLi0tLS0tLS0rLS0tLSstLS0tLy4tLS8tLS0tLS8rLi0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAABQYHBAgDAv/EAEoQAAEDAwIDBAYFBBAHAQAAAAEAAgMEBREGEgchMRNBUWEiQnGBkaEUMnKxshUjUsEWJCUzNjdDU2JzdIKSorPRFzQ1VGODwgj/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAQIEAwX/xAAmEQEAAgEFAAEDBQEAAAAAAAAAAQIRAwQSITFREyJBQnGRobEF/9oADAMBAAIRAxEAPwDcUREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQERfGqdM2L9rgFx5DPIDzPfj2IPhc7rR2uHdWvAz0HVzvYOpVPr9eTudi3xBo8X5J+AwB8Sp5mlqSacyXZzp5D1LiWtHkGt6DyJK7hYbQG4FPF/gatFLaNfYzLLeuvfyYrH9s/fq69udkSAeQa3HzC66TXNyid+2WskHvafiMj5KzV2j7PVN/NsMZ8WEj5HI+SpV+03WWY7nenH+mO77Q7vuWultvqdYwx6ldzpfdnK92XU1vux2sOx/wCg7kT7D0d96mliLXOY4FnIjmD4FbNb6j6XQRyD12B3xAKzbnQjTmJr5LVtNxOrmLew6ERFlbBVXVPEHT+majs617ny98cY3ObyyN3MNb7Ccqx18/0WhkeOexjnfBpP6l5x4d2Fut9VuF4e4jY6aUg4dId7RjPdkvzkdwwMK9axPcqzLXdOcUrBfrkyCJs8ckhwwPYCHHBPWMuxyB5nAV4VNptE6f0p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" alt="">
-            <h6>WORKOUTS <span style="color: #98cbe3 ;">▼</span></h6>
-            <h6>PROGRAMS <span style="color: #98cbe3 ;">▼</span></h6>
-            <h6>HEALTHY LIVING <span style="color: #98cbe3 ;">▼</span></h6>
-            <h6>COMMUNITY <span style="color: #98cbe3 ;">▼</span></h6>
-            <h6>ABOUT <span style="color: #98cbe3 ;">▼</span></h6>
+            <h6>WORKOUTS <span style="color: #2ab6c5 ;">▼</span></h6>
+            <h6>PROGRAMS <span style="color: #2ab6c5 ;">▼</span></h6>
+            <h6>HEALTHY LIVING <span style="color: #2ab6c5 ;">▼</span></h6>
+            <h6>COMMUNITY <span style="color: #2ab6c5 ;">▼</span></h6>
+            <h6>ABOUT <span style="color: #2ab6c5 ;">▼</span></h6>
             <h6>STORE</h6>
-            <h6 style=color:#98cbe3>MEMBERSHIP</h6>
+            <h6 style=color:#2ab6c5>MEMBERSHIP</h6>
         </div>
-        <div class="sin">
+        <div class="dropdown">
             <p>Hi! Sing In</p>
-            <h6>MY FITNESS ▼</h6>
+            <button class="dropbtn">MY FITNESS <span style="color: #2ab6c5 ;">▼</span></button></h6>
+            <div class="dropdown-content">
+                <a href="#"><h5>JOIN FOR FREE!</h5></a>
+                <a href="#">Join for free and start building and tracking your workouts,<br>get support from other Fitness Blender members and more!</a>
+                <a href="#"><button class="join">JOIN</button></a>
+                <a href="#"><button class="sign">SIGN IN</button></a>
+              </div>
         </div>
         <div class="right">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpRDO3dvPWCGi5r_4Q035srg_D8SZZjQw88Q&usqp=CAU" alt="">
@@ -144,6 +342,58 @@
         <div>
             <img src="https://cloudfront.fitnessblender.com/assets/img/homepage/team-1440.webp" alt="">
         </div>
+    </div>
+    <div id="cont2">
+        <div>
+        <h2>Introducing<br><span style="font-weight: 700;">FB</span> <span style="color:#2ab6c5";>Plus</span> Passes</h2>
+        <p>Passes give you full access to everything Plus has to offer, without a long-term subscription. Choose a pass that fits your budget and your schedule.</p>
+        <button>BUY A PASS</button>
+        </div>
+        <div id="fbPlus">
+            <img src="https://cloudfront.fitnessblender.com/assets/img/homepage/passes-720.webp" alt="">
+        </div>
+    </div>
+    <div id="cont3">
+        <div style="background-color: #f0f4f7;">
+        <h2>Workout Videos</h2>
+        <p>Exercise with certified personal trainers whether you’re at home or on the road.</p>
+        <a href="#">Find a Workout</a>
+        <div>
+        <img src="https://cloudfront.fitnessblender.com/assets/img/homepage/workouts-720.webp" alt="">
+        </div>
+        </div>
+        <div style="background-color: #f8fcfd">
+        <h2>Programs</h2>
+        <p>Professionally designed programs take the guesswork out of exercising.</p>
+        <a href="#">Browse All Programs</a>
+        <div>
+        <img src="https://cloudfront.fitnessblender.com/assets/img/homepage/programs-720.webp" alt="">
+        </div>
+        </div>
+        <div style="background-color: #000000">
+        <h2 style="color: white;">Wellness Articles</h2>
+        <p  style="color: white;">Research-backed articles to help you care for your body and mind.</p>
+        <a href="#">Learn from Experts</a>
+        <div>
+        <img src="https://cloudfront.fitnessblender.com/assets/img/homepage/articles-720.webp" alt="">
+        </div>
+        </div>
+        <div style="background-color: #d8d9db">
+        <h2>Healthy Recipes</h2>
+        <p>Fuel your day with recipes by Registered Dietitians and professional chefs.</p>
+        <a href="#">Find a Recipes</a>
+        <div>
+        <img src="https://cloudfront.fitnessblender.com/assets/img/homepage/recipes-720.webp" alt="">
+        </div>
+        </div>
+    </div>
+    <div id="cont4">
+        <div>
+        <h2>Supportive Community</h2>
+        <p>Stay motivated and engaged with a little help from a supportive community of other members.</p>
+        <a href="#">Become a Member</a>
+        <img src="https://cloudfront.fitnessblender.com/assets/img/homepage/community-2160.webp" alt="">
+    </div>
     </div>
 </body>
 </html>
