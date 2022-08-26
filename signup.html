@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <form action="">
+        <input type="text" id="fname" placeholder="First name">
+        <input type="text" id="lname" placeholder="Last name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="usrname" placeholder="username">
+        <input type="password" id="password" placeholder="password">
+        <input type="submit">
+    </form>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", addcred)
+    let signupArr=[] 
+
+    function addcred(event){
+        event.preventDefault()
+
+        let first_name=document.getElementById("fname").value
+        let last_name=document.getElementById("lname").value
+        let email=document.getElementById("email").value
+        let user_name=document.getElementById("usrname").value
+        let password=document.getElementById("password").value
+
+        let obj={
+            first_name,
+            last_name,
+            email,
+            user_name,
+            password,
+        }
+        signupArr.push(obj)
+    }
+</script>
