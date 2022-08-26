@@ -302,7 +302,171 @@
         cursor: pointer;
         text-decoration: underline;
     }
-   
+    #cont5{
+        margin: -10px auto;
+        padding-top: 120px;
+        height: 720px;
+        background-color: #f0f4f7;
+    }
+    #cont5 h2{
+        font-size: 40px;
+        font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 400;
+        line-height: 48px;
+        margin-top: 10px;
+        margin-left: 305px
+    }
+    .subhead{
+        font-size: 18px;
+        font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 400;
+        line-height: 32px;
+        margin-top: 30px;
+        margin-left: 313px;
+    }
+    .plans{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        height: 500px;
+    }
+    .plans div{
+        height: 380px;
+        width: 309px;
+        margin-right: 10px;
+    }
+    .plans div>h4{
+        font-size: 16px;
+        font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 600;
+        line-height: 48px;
+    }
+    .plans div>img{
+        width: 308px;
+    }
+    .plans div>h5{
+        font-weight: 400;
+        font-size: 12px;
+        font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        margin-top: 30px;
+        color: #4296cc;
+    }
+    .plans div>h5+h3{
+        font-size: 16px;
+        font-weight: 600;
+        width: 264px;
+        font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        margin: 10px 8px 30px 20px
+    }
+    .plans div>h3+p{
+        margin-left: 16px;
+        margin-top: 70px;
+    }
+    .plans div div{
+        background-color: white;
+        margin-bottom: 50px;
+        transition: 300ms;
+        border: 3px solid #f0f4f7;
+    }
+    .plans div>div:hover{
+        border: 3px solid #4296cc;
+        transition: 900ms;
+    }
+    .plans div+a{
+        color: #4296cc;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    .plans div+a:hover{
+        text-decoration: underline;
+    }
+    #cont6{
+        background-color: #212433;
+        height: 700px;
+    }
+    #cont6:hover{
+        cursor: pointer;
+    }
+    .upper{
+        display: flex;
+        height: 500px;
+    }
+    .upper div img{
+        margin-top: 90px;
+        margin-left: 190px;
+        width: 200px;
+    }
+    .upper div p{
+        margin-left: 230px;
+        margin-top: 8px;
+        font-size: 13px;
+        color: #74809b;
+    }
+    .pbtn{
+        display: flex;
+        margin-left: 230px;
+        margin-top: 120px;
+    }
+    .pbtn>div{
+        line-height: 33px;
+        margin-right: -150px;
+        text-transform: uppercase;
+    }
+    .pbtn>div>p:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .pbtn div:nth-child(1) p:nth-child(1){
+        color: white;
+        font-weight: bold;
+    }
+    .pbtn div:nth-child(1) p:nth-child(4){
+        font-weight: bold;
+        color: white;
+    }
+    .pbtn div:nth-child(2) p:nth-child(1){
+        font-weight: bold;
+        color: white;
+    }
+    .pbtn div:nth-child(3) p:nth-child(1){
+        font-weight: bold;
+        color: white;
+    }
+    .pbtn div:nth-child(4) p{
+        font-weight: bold;
+        color: white;
+    }
+    .lower{
+        display: flex;
+        border-top: 1px solid #74809b;
+        width: 80%;
+        margin: auto;
+        justify-content: end;
+    }
+    .lower div{
+        margin: auto;
+        display: flex;
+        margin-top: 60px;
+    }
+    .lower div:nth-child(1){
+        color: #74809b
+    }
+    .lower div:nth-child(2){
+        margin-left: 550px;
+    }
+    .lower div img{
+        width: 25px;
+    }
+    .lower div h6{
+        margin-left: 10px;
+        margin-top: 1px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .lower div h6:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
 
 </style>
 <body>
@@ -324,8 +488,8 @@
             <div class="dropdown-content">
                 <a href="#"><h5>JOIN FOR FREE!</h5></a>
                 <a href="#">Join for free and start building and tracking your workouts,<br>get support from other Fitness Blender members and more!</a>
-                <a href="#"><button class="join">JOIN</button></a>
-                <a href="#"><button class="sign">SIGN IN</button></a>
+                <a href="login.js"><button class="join">JOIN</button></a>
+                <a href="signup.js"><button class="sign">SIGN IN</button></a>
               </div>
         </div>
         <div class="right">
@@ -395,5 +559,114 @@
         <img src="https://cloudfront.fitnessblender.com/assets/img/homepage/community-2160.webp" alt="">
     </div>
     </div>
+    <div id="cont5">
+        <h2>Not sure where to start?</h2>
+        <p class="subhead">Programs offer day-to-day guidance on an interactive calendar to keep you on track.</p>
+        <div class="plans">
+            <div>
+                <h4>Perfect for Beginners</h4>
+                <div>
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_31_fb-low-impact-round-2-fat-loss-program-40-minutes-or-less.jpg" alt="">
+                <h5>4 WEEK PROGRAM - 34 MIN/DAY</h5>
+                <h3>FB Low Impact Round 2 - Build Muscle & Burn Fat - 40 Minutes or Less</h3>
+                <p  style="margin-top: 55px;">$14.99</p>
+                </div>
+             <a href="#">View All Progams</a>
+            </div>
+            <div>
+                <h4>You Choose</h4>
+                <div>
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_29_4-week-fb-blend-burn-fat-build-muscle-tone-35-or-55-minutes-a-day.jpg" alt="">
+                <h5>4 WEEK PROGRAM - 38 MIN/DAY</h5>
+                <h3>FB Blend - Burn Fat, Build Muscle, Tone ;35 or 55 Minutes a Day</h3>
+                <p>$14.99</p>
+                </div>
+            </div>
+            <div>
+                <h4>Short on Time?</h4>
+                <div>
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_28_fb-30-4-week-fat-loss-program-for-busy-people-round-4.jpg" alt="">
+                <h5>4 WEEK PROGRAM - 30 MIN/DAY</h5>
+                <h3>FB 30 - Fat Loss Program For Busy People (Round 4)</h3>
+                <p>$14.99</p>   
+                </div>
+            </div>
+            <div>
+                <h4>No Equipment Necessary</h4>
+                <div>
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_7_fb-bodyweight-bodyweight-only-fat-loss-program.jpg" alt="">
+                <h5>4 WEEK PROGRAM - 40 MIN/DAY</h5>
+                <h3>FB Bodyweight - Bodyweight<br> Only Fat Loss Program</h3>
+                <p>$14.99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cont6">
+        <div class="upper">
+            <div>
+            <img src="https://teespring-storecontent.s3.amazonaws.com/-7Iti9CH8lowes5qrqeiig_store_logo_image?1485804503934" alt="">
+            <p>WORKOUT COMPLETE™</p>
+            </div>
+            <div class="pbtn">
+                <div>
+                    <p>workouts</p>
+                    <p>workout videos</p>
+                    <p>custom workouts</p>
+                    <p>programs</p>
+                    <p>workout programs</p>
+                    <p>meal plans</p>
+                    <p>pilot programs</p>
+                    <p>routines</p>
+                </div>
+                <div>
+                    <p>healthy living</p>
+                    <p>fitness</p>
+                    <p>health</p>
+                    <p>nutrition</p>
+                    <p>healthy recipies</p>
+                    <p>expert</p>
+                </div>
+                <div>
+                    <p>about</p>
+                    <p>careers</p>
+                    <p>tutorials</p>
+                    <p>our team</p>
+                    <p>B2B options</p>
+                </div>
+                <div>
+                    <p>MEMBERSHIP</p>
+                    <p>fb plus</p>
+                    <p>community</p>
+                    <p>blog</p>
+                    <p>contact us</p>
+                    <p>faq</p>
+                    <p>store</p>
+                </div>
+            </div>
+        </div>
+        <div class="lower">
+            <div>
+                <p>Copyright © 2022 Fitness Blender. All rights reserved.</p>
+                <h6>Terms of Use</h6>
+                <h6>Privacy Policy</h6>
+            </div>
+            <div>
+                <img src="https://pnggrid.com/wp-content/uploads/2021/07/White-YouTube-Logo-Transparent.png">
+                <img src="https://pnggrid.com/wp-content/uploads/2021/07/White-YouTube-Logo-Transparent.png">
+                <img src="https://pnggrid.com/wp-content/uploads/2021/07/White-YouTube-Logo-Transparent.png">
+                <img src="https://pnggrid.com/wp-content/uploads/2021/07/White-YouTube-Logo-Transparent.png">
+                <img src="https://pnggrid.com/wp-content/uploads/2021/07/White-YouTube-Logo-Transparent.png">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+<script>
+    function join(){
+        window.location = 
+    }
+    function sign(){
+        window.location = ""
+    }
+</script>
