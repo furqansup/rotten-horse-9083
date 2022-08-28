@@ -375,3 +375,7 @@ input+img{
     cursor: pointer;
     background-color: rgb(73, 82, 108);
 }
+.right:hover{
+    border-bottom: 2px solid rgb(47, 155, 198);
+    cursor: pointer;
+}
